@@ -1,6 +1,5 @@
 return {
   "NeogitOrg/neogit",
-  tag = "v0.0.1",
   cmd = "Neogit",
   dependencies = {
     "nvim-lua/plenary.nvim",         -- required
