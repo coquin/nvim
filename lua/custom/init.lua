@@ -1,1 +1,2 @@
-vim.opt.colorcolumn = "80"
+require("custom.options")
+require("custom.keymaps")
