@@ -45,4 +45,30 @@ return {
       return require "custom.configs.null-ls"
     end
   },
+
+  -- nvim-surround
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({})
+    end
+  },
+
+  -- leap
+  {
+    "ggandor/leap.nvim",
+    event = 'VeryLazy',
+  },
+
+  {
+    "olimorris/persisted.nvim",
+    lazy = false, -- make sure the plugin is always loaded at startup
+    config = function()
+      require("persisted").setup({
+        autoload = true,
+      })
+    end,
+  },
 }
